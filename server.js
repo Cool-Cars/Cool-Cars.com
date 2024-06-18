@@ -328,7 +328,7 @@ app.get('/favorites', async (req, res) => {
                 Cars.id AS car_id, mileage, arrival_date, year,
                 price, availability, date_sold, 
                 image_id, review_id, color, make, 
-                model, body_style, fuel_type
+                model, body_style, fuel_type, description
             FROM Cars 
             JOIN userfavorites ON Cars.id = userfavorites.car_id
             JOIN Colors ON Cars.color_id = Colors.id
